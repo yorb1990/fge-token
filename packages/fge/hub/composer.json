@@ -1,0 +1,23 @@
+{
+    "name": "fge/hub",
+    "description": "API de guardado de tokens con ayuda de CROSS STORAGE y LZ-string",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ortega Yañez Brain Rafael",
+            "email": "yorb1990@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "fge\\hub\\": "/"
+        }
+    },    
+    "config": {
+        "sort-packages": true
+    }
+}
