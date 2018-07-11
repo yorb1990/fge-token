@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "403745b9d3299dfab0515d67625011c9",
+    "content-hash": "643ea32c3d8dc984cfe63b0ee21ee13c",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -374,6 +374,40 @@
                 }
             ],
             "description": "Algoritmo de nuc (verificacion)",
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "fge/nucg",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/fge/nucg",
+                "reference": "3531498d3852708f0e99f3707935a0144073663d",
+                "shasum": null
+            },
+            "require": {
+                "fge/nucc": "*",
+                "laravel/framework": ">=5",
+                "php": ">=7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "fge\\nucg\\": "/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ortega Yañez Brain Rafael",
+                    "email": "yorb1990@gmail.com"
+                }
+            ],
+            "description": "packete de servicio de generacion de nuc",
             "transport-options": {
                 "symlink": true
             }

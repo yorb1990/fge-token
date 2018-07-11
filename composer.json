@@ -43,7 +43,7 @@
     ],
     "require": {
         "php": "^7.1.3",
-        "fge/nucc": "*",
+        "fge/nucg": "*",
         "fge/hub": "*",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.6.*",
