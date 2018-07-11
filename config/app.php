@@ -148,7 +148,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         fge\hub\client_sp::class,
         fge\nucc\fge_nucc_sp::class,
-        fge\nucg\fge_nucg_sp::class,
         /*
          * Package Service Providers...
          */

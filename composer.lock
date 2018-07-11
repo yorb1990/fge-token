@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "806a83b741faf592c8c9c009565f4aa7",
+    "content-hash": "403745b9d3299dfab0515d67625011c9",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -314,11 +314,11 @@
         },
         {
             "name": "fge/hub",
-            "version": "dev-jwt",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/fge/hub",
-                "reference": "4e569af4ee90e873fa063e0131883a37e946c74a",
+                "reference": "4b1e17be67b5d7e073c513f8ffdaa4f9a8a5b750",
                 "shasum": null
             },
             "require": {
@@ -345,45 +345,12 @@
             }
         },
         {
-            "name": "fge/jwt",
-            "version": "dev-jwt",
-            "dist": {
-                "type": "path",
-                "url": "packages/fge/jwt",
-                "reference": "68e83257ac3ecb436e048f12b41d76cdb7e2b5b4",
-                "shasum": null
-            },
-            "require": {
-                "fge/token": "*",
-                "php": ">=5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "fge\\jwt\\": "/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ortega Yañez Brain Rafael",
-                    "email": "yorb1990@gmail.com"
-                }
-            ],
-            "description": "algoritmo personalizado de jwt",
-            "transport-options": {
-                "symlink": true
-            }
-        },
-        {
             "name": "fge/nucc",
-            "version": "dev-jwt",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/fge/nucc",
-                "reference": "6426dec44c09e8d33a619941d1b0df26aa7312ff",
+                "reference": "1b8729be23f6be71a8001affa31b22c93b140f47",
                 "shasum": null
             },
             "require": {
@@ -412,46 +379,12 @@
             }
         },
         {
-            "name": "fge/nucg",
-            "version": "dev-jwt",
-            "dist": {
-                "type": "path",
-                "url": "packages/fge/nucg",
-                "reference": "79c7e577975bec465b9a499ded5573afd75162a3",
-                "shasum": null
-            },
-            "require": {
-                "fge/nucc": "*",
-                "laravel/framework": ">=5",
-                "php": ">=7"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "fge\\nucg\\": "/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ortega Yañez Brain Rafael",
-                    "email": "yorb1990@gmail.com"
-                }
-            ],
-            "description": "packete de servicio de generacion de nuc",
-            "transport-options": {
-                "symlink": true
-            }
-        },
-        {
             "name": "fge/token",
-            "version": "dev-jwt",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "packages/fge/token",
-                "reference": "6f24e49d98c935e872b42d17559ed54fd14d2d93",
+                "reference": "d5d81715a05035e9b5d9166daebf90e3ebfa80c0",
                 "shasum": null
             },
             "require": {
