@@ -19,7 +19,10 @@ class fgejwt
                         ){
                         return $next($request);
                     }
-                    return redirect('fge_tok/login');
+                    $base=str_replace('+','-',base64_encode($request->path()));
+                    $base=str_replace('=','_',$base);
+                    $base=str_replace('/','~',$base);
+                    return redirect('fge_tok/login?preurl='.$base);
                 }else{
                     $token=$request->header($TNP);
                 }                
@@ -41,19 +44,19 @@ class fgejwt
                                     */
                                     return $next($request);
                             }else{
-                                return Response::json(array('message'=>$error));  
+                                return \Response::json(array('message'=>$error));  
                             }
                         }else{
-                            return Response::json(array('message'=>'formato invalido (token json interno)'));  
+                            return \Response::json(array('message'=>'formato invalido (token json interno)'));  
                         }
                     }else{
-                        return Response::json(array('message'=>'decifrado AES incorrecto'));  
+                        return \Response::json(array('message'=>'decifrado AES incorrecto'));  
                     }
             }else{
-                return Response::json(array('message'=>'error numero de token no valido'));  
+                return \Response::json(array('message'=>'error numero de token no valido'));  
             }
         }else{
-            return Response::json(array('message'=>'error de formato'));  
+            return \Response::json(array('message'=>'error de formato'));  
         }
     }
 }
