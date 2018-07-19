@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        \fge\jwt\Middleware\fgejwt::class
     ];
 
     /**
@@ -27,9 +28,9 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewareGroups = [
-        'fgejwt'=>[
-            \App\Http\Middleware\fgejwt::class
-        ],
+        /*'fgejwt'=>[
+            fge\jwt\Middleware\fgejwt::class
+        ],*/
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
